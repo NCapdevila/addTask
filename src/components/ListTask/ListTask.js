@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Form from '../FormTaskComponent/Form';
-import '../ListTask/ListTask.css';
 import Task from '../TaskComponent/Task';
+import '../ListTask/ListTask.css';
 
 function ListTask(){
 
@@ -23,7 +23,7 @@ function ListTask(){
     const completarTarea = id =>{
         const tareasActualizadas = tasks.map(task => {
             if (task.id === id){
-                task.completa = !task.completada;
+                task.completada = !task.completada;
             }
             return task;
         });
