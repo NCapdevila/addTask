@@ -19,6 +19,7 @@ function Form( props ) {
         }
 
         props.onSubmit(tareaNueva);
+        
     }
 
 
@@ -30,12 +31,12 @@ function Form( props ) {
             <input
             className='tarea__input'
             type='text'
-            placeholder='Escribe una tarea'
+            placeholder='Write a task'
             name='texto'
             onChange={manejarCambio}
             />
             <button className='tarea__boton'>
-                Agrega Tarea
+                add task
             </button>
 
         </form>
